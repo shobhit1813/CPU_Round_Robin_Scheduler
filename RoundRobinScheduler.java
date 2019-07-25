@@ -10,7 +10,6 @@ public class RoundRobinScheduler{
 
 	public Node addInQueue(Node proc,int n,Node proc_readd){
 		Node proc_tmp = proc;
-		//System.out.println("here"+proc_readd.proc_name);
 		while(proc_tmp.next_proc != proc){
 
 			proc_tmp = proc_tmp.next_proc;
