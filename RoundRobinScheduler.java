@@ -57,7 +57,7 @@ public class RoundRobinScheduler{
 			System.out.print(proc_tmp.proc_name+" ");
 			proc_tmp = proc_tmp.next_proc;
 		}
-		System.out.print(proc_tmp.proc_name);
+		
 	}
 
 	public Node removeProcess(Node proc, Node rem_proc){
@@ -103,7 +103,7 @@ public class RoundRobinScheduler{
 				schedule =  removeProcess(proc, schedule);
 				System.out.println("remaining");
 				showProcess(proc);
-				//System.out.println("Here"+ schedule.proc_name);
+				
 			}
 			else{
 
@@ -112,7 +112,7 @@ public class RoundRobinScheduler{
 			}
 			schedule = schedule.next_proc;
 		}
-		//System.out.println(proc.proc_name);
+		
 	}
 
 	public static void main(String args[]){
